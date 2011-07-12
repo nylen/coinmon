@@ -35,65 +35,65 @@ pre {
 
 /* root element for tabs  */
 #tab-links {
-  margin:0 !important;
-  padding:0;
-  height:30px;
-  border-bottom:1px solid #666;
+  margin: 0 !important;
+  padding: 0;
+  height: 30px;
+  border-bottom: 1px solid #666;
 }
 
 /* single tab */
 #tab-links li {
-  float:left;
-  padding:0;
-  margin:0;
-  list-style-type:none;
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 /* link inside the tab. uses a background image */
 #tab-links a {
-  float:left;
-  font-size:13px;
-  display:block;
-  padding:5px 30px;
-  text-decoration:none;
-  border:1px solid #666;
-  border-bottom:0px;
-  height:18px;
-  background-color:#fff;
-  color:#777;
-  margin-right:2px;
-  position:relative;
-  top:1px;
-  outline:0;
-  -moz-border-radius:4px 4px 0 0;
-  -webkit-border-radius:4px 4px 0 0;
-  border-radius:4px 4px 0 0;
+  float: left;
+  font-size: 13px;
+  display: block;
+  padding: 5px 30px;
+  text-decoration: none;
+  border: 1px solid #666;
+  border-bottom: 0px;
+  height: 18px;
+  background-color: #fff;
+  color: #777;
+  margin-right: 2px;
+  position: relative;
+  top: 1px;
+  outline: 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 #tab-links a:hover {
-  background-color:#F7F7F7;
-  color:#333;
+  background-color: #F7F7F7;
+  color: #333;
 }
 
 /* selected tab */
 #tab-links a.current {
-  background-color:#eee;
-  border-bottom:1px solid #eee;
-  color:#000;
-  cursor:default;
+  background-color: #eee;
+  border-bottom: 1px solid #eee;
+  color: #000;
+  cursor: default;
 }
 
 
 /* tab pane */
 #tabs .tab {
-  display:none;
-  border:1px solid #666;
-  border-width:0 1px 1px 1px;
-  -moz-border-radius:0 0 4px 4px;
-  -webkit-border-radius:0 0 4px 4px;
-  border-radius:0 0 4px 4px;
-  min-height:150px;
-  padding:15px;
-  background-color:#eee;
+  display: none;
+  border: 1px solid #666;
+  border-width: 0 1px 1px 1px;
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  min-height: 150px;
+  padding: 15px;
+  background-color: #eee;
 }
 
