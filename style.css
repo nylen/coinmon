@@ -1,0 +1,85 @@
+body {
+  font-family: "Lucida Grande", "bitstream vera sans", "trebuchet ms", sans-serif, Verdana;
+}
+
+a {
+  outline: none;
+}
+
+fieldset {
+  position: relative;
+}
+
+pre {
+  margin: 0;
+}
+
+.mtime {
+  margin-bottom: .8em;
+}
+
+.loading {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* root element for tabs  */
+#tab-links {
+  margin:0 !important;
+  padding:0;
+  height:30px;
+  border-bottom:1px solid #666;
+}
+
+/* single tab */
+#tab-links li {
+  float:left;
+  padding:0;
+  margin:0;
+  list-style-type:none;
+}
+
+/* link inside the tab. uses a background image */
+#tab-links a {
+  float:left;
+  font-size:13px;
+  display:block;
+  padding:5px 30px;
+  text-decoration:none;
+  border:1px solid #666;
+  border-bottom:0px;
+  height:18px;
+  background-color:#efefef;
+  color:#777;
+  margin-right:2px;
+  position:relative;
+  top:1px;
+  outline:0;
+  -moz-border-radius:4px 4px 0 0;
+}
+
+#tab-links a:hover {
+  background-color:#F7F7F7;
+  color:#333;
+}
+
+/* selected tab */
+#tab-links a.current {
+  background-color:#ddd;
+  border-bottom:1px solid #ddd;
+  color:#000;
+  cursor:default;
+}
+
+
+/* tab pane */
+#tabs .tab {
+  display:none;
+  border:1px solid #666;
+  border-width:0 1px 1px 1px;
+  min-height:150px;
+  padding:15px;
+  background-color:#ddd;
+}
+
