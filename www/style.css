@@ -8,6 +8,15 @@ a {
 
 fieldset {
   position: relative;
+  border: 1px solid #666;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+fieldset.last {
+  margin-bottom: 0;
 }
 
 pre {
@@ -20,8 +29,8 @@ pre {
 
 .loading {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0;
+  right: 25px;
 }
 
 /* root element for tabs  */
@@ -50,13 +59,15 @@ pre {
   border:1px solid #666;
   border-bottom:0px;
   height:18px;
-  background-color:#efefef;
+  background-color:#fff;
   color:#777;
   margin-right:2px;
   position:relative;
   top:1px;
   outline:0;
   -moz-border-radius:4px 4px 0 0;
+  -webkit-border-radius:4px 4px 0 0;
+  border-radius:4px 4px 0 0;
 }
 
 #tab-links a:hover {
@@ -66,8 +77,8 @@ pre {
 
 /* selected tab */
 #tab-links a.current {
-  background-color:#ddd;
-  border-bottom:1px solid #ddd;
+  background-color:#eee;
+  border-bottom:1px solid #eee;
   color:#000;
   cursor:default;
 }
@@ -78,8 +89,11 @@ pre {
   display:none;
   border:1px solid #666;
   border-width:0 1px 1px 1px;
+  -moz-border-radius:0 0 4px 4px;
+  -webkit-border-radius:0 0 4px 4px;
+  border-radius:0 0 4px 4px;
   min-height:150px;
   padding:15px;
-  background-color:#ddd;
+  background-color:#eee;
 }
 
