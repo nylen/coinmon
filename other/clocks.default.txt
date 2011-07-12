@@ -1,0 +1,14 @@
+
+Adapter 0 - AMD Radeon HD 6600 Series
+                            Core (MHz)    Memory (MHz)
+           Current Clocks :    300           300
+             Current Peak :    800           800
+  Configurable Peak Range : [400-900]     [800-1000]
+                 GPU load :    0%
+
+Adapter 1 - AMD Radeon HD 6700 Series   
+                            Core (MHz)    Memory (MHz)
+           Current Clocks :    100           150
+             Current Peak :    840           1050
+  Configurable Peak Range : [775-950]     [1050-1250]
+                 GPU load :    0%
