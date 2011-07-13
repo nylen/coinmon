@@ -10,25 +10,25 @@ while true; do
   echo updating adapter 0 miner log
   screen -x bitcoin -p miner0 -X hardcopy /tmp/bc-miner0-raw.txt
   sed ':a; /^\n*$/{$d;N;ba;}' /tmp/bc-miner0-raw.txt \
-    | tail -n 10 > /tmp/bc-miner0.txt.tmp
+    | tail -n 5 > /tmp/bc-miner0.txt.tmp
   mv /tmp/bc-miner0.txt.tmp /tmp/bc-miner0.txt
 
   echo updating adapter 1 miner log
   screen -x bitcoin -p miner1 -X hardcopy /tmp/bc-miner1-raw.txt
   sed ':a; /^\n*$/{$d;N;ba;}' /tmp/bc-miner1-raw.txt \
-    | tail -n 10 > /tmp/bc-miner1.txt.tmp
+    | tail -n 5 > /tmp/bc-miner1.txt.tmp
   mv /tmp/bc-miner1.txt.tmp /tmp/bc-miner1.txt
 
   echo updating adapter 0 watchdog log
   screen -x bitcoin -p watchdog0 -X hardcopy /tmp/bc-watchdog0-raw.txt
   sed ':a; /^\n*$/{$d;N;ba;}' /tmp/bc-watchdog0-raw.txt \
-    | tail -n 10 > /tmp/bc-watchdog0.txt.tmp
+    | tail -n 5 > /tmp/bc-watchdog0.txt.tmp
   mv /tmp/bc-watchdog0.txt.tmp /tmp/bc-watchdog0.txt
 
   echo updating adapter 1 watchdog log
   screen -x bitcoin -p watchdog1 -X hardcopy /tmp/bc-watchdog1-raw.txt
   sed ':a; /^\n*$/{$d;N;ba;}' /tmp/bc-watchdog1-raw.txt \
-    | tail -n 10 > /tmp/bc-watchdog1.txt.tmp
+    | tail -n 5 > /tmp/bc-watchdog1.txt.tmp
   mv /tmp/bc-watchdog1.txt.tmp /tmp/bc-watchdog1.txt
 
   echo updating adapter 0 temperature
