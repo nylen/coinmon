@@ -52,8 +52,8 @@ HTML;
         </a>
       </li>
       <li>
-        <a class="tab-link" id="link-pool" href="#pool">
-          Pool info
+        <a class="tab-link" id="link-links" href="#links">
+          Other links
         </a>
       </li>
     </ul>
@@ -88,7 +88,24 @@ HTML;
       <div class="tab">
         <div class="file" data-file="processes"></div>
       </div>
-      <div class="tab">(TODO: pool info)</div>
+      <div class="tab">
+<?php
+$no_links = true;
+if(is_file('links.php')) {
+  include 'links.php';
+  foreach($links as $title => $url) {
+    $no_links = false;
+    echo <<<HTML
+        <a href="$url">$title</a><br />
+
+HTML;
+  }
+}
+if($no_links) {
+  echo "No links defined or links.php file not found\n";
+}
+?>
+      </div>
     </div>
   </body>
 </html>
