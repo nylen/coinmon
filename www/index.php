@@ -73,9 +73,13 @@ HTML;
           <legend>Clock info</legend>
           <div class="file" data-file="clock$index"></div>
         </fieldset>
-        <fieldset class="last">
+        <fieldset>
           <legend>Fan speed</legend>
           <div class="file" data-file="fan$index"></div>
+        </fieldset>
+        <fieldset class="last">
+          <legend>Watchdog</legend>
+          <div class="file" data-file="watchdog$index"></div>
         </fieldset>
       </div>
 

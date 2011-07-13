@@ -15,9 +15,9 @@ title update
 stuff "./update-files.sh\015"
 
 screen
-title watchdog-0
-stuff "./watchdog.sh 0 65 85\015"
+title watchdog0
+stuff "./watchdog.sh 0 65 86\015"
 
 screen
-title watchdog-1
-stuff "./watchdog.sh 1 65 85\015"
+title watchdog1
+stuff "./watchdog.sh 1 65 86\015"
