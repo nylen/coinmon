@@ -1,0 +1,5 @@
+TODO: Write a script that downloads and installs everything
+
+For now, a howto is here:
+
+http://forum.bitcoin.org/index.php?topic=7514.0

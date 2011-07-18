@@ -1,0 +1,3 @@
+k10temp HOWTO (for lm-sensors) at:
+
+http://ubuntuforums.org/showthread.php?t=1287819
