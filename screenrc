@@ -2,11 +2,11 @@ chdir ~/bitcoin/phoenix
 
 screen
 title miner0
-stuff "./phoenix.py -u http://14awfjFCyiixHjgJpronewiYcVt3Pr9GWm:x@mining.eligius.st:8337/ -k phatk VECTORS BFI_INT WORKSIZE=128 FASTLOOP=false AGGRESSION=9 DEVICE=0\015"
+stuff "./phoenix.py -u http://\$USER:\$PASSWORD@\$HOST:\$PORT/ -k phatk VECTORS BFI_INT WORKSIZE=128 FASTLOOP=false AGGRESSION=9 DEVICE=0\015"
 
 screen
 title miner1
-stuff "./phoenix.py -u http://14awfjFCyiixHjgJpronewiYcVt3Pr9GWm:x@mining.eligius.st:8337/ -k phatk VECTORS BFI_INT WORKSIZE=128 FASTLOOP=false AGGRESSION=9 DEVICE=1\015"
+stuff "./phoenix.py -u http://\\$USER:\$PASSWORD@\$HOST:\$PORT/ -k phatk VECTORS BFI_INT WORKSIZE=128 FASTLOOP=false AGGRESSION=9 DEVICE=1\015"
 
 chdir ~/coinmon
 
