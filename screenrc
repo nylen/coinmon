@@ -6,7 +6,7 @@ stuff "./phoenix.py -u http://\$USER:\$PASSWORD@\$HOST:\$PORT/ -k phatk VECTORS 
 
 screen
 title miner1
-stuff "./phoenix.py -u http://\\$USER:\$PASSWORD@\$HOST:\$PORT/ -k phatk VECTORS BFI_INT WORKSIZE=128 FASTLOOP=false AGGRESSION=9 DEVICE=1\015"
+stuff "./phoenix.py -u http://\$USER:\$PASSWORD@\$HOST:\$PORT/ -k phatk VECTORS BFI_INT WORKSIZE=128 FASTLOOP=false AGGRESSION=9 DEVICE=1\015"
 
 chdir ~/coinmon
 
