@@ -1,0 +1,11 @@
+# Sample autostart file
+# Place in ~/.config/autostart folder
+# Also need to enable autologin
+# For LXDE put "autologin=username" in [base] section of /etc/lxdm/default.conf
+# (tutorials also mentioned /etc/lxdm/lxdm.conf)
+[Desktop Entry]
+Type=Application
+Name=Bitcoin mining
+Comment=Start miners
+Exec=/home/nioctib/coinmon/start.sh
+OnlyShowIn=GNOME;LXDE;XFCE;
