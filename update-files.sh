@@ -22,13 +22,13 @@ while true; do
   echo updating adapter 0 watchdog log
   screen -x bitcoin -p watchdog0 -X hardcopy /tmp/bc-watchdog0-raw.txt
   sed ':a; /^\n*$/{$d;N;ba;}' /tmp/bc-watchdog0-raw.txt \
-    | tail -n 5 > /tmp/bc-watchdog0.txt.tmp
+    | tail -n 8 > /tmp/bc-watchdog0.txt.tmp
   mv /tmp/bc-watchdog0.txt.tmp /tmp/bc-watchdog0.txt
 
   echo updating adapter 1 watchdog log
   screen -x bitcoin -p watchdog1 -X hardcopy /tmp/bc-watchdog1-raw.txt
   sed ':a; /^\n*$/{$d;N;ba;}' /tmp/bc-watchdog1-raw.txt \
-    | tail -n 5 > /tmp/bc-watchdog1.txt.tmp
+    | tail -n 8 > /tmp/bc-watchdog1.txt.tmp
   mv /tmp/bc-watchdog1.txt.tmp /tmp/bc-watchdog1.txt
 
   echo updating adapter 0 temperature
